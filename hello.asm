@@ -10,6 +10,5 @@ _main:   mov     rax, 0x02000004 ; system call for write
          xor     rdi, rdi        ; exit code 0
          syscall
 
-         ; stores variables, etc. - stuff we want in memory during the runtime of the program
-         section .data
+         section .data ; stores variables, etc. - stuff we want in memory during the runtime of the program
 message: db      "Hello, World", 10

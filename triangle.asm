@@ -23,7 +23,7 @@ done:
             mov     rsi, output     ; address of string to output
             mov     rdx, dataSize   ; number of bytes
             syscall
-            mov     rax, 0x02000001  ; syscall for exit
+            mov     rax, 0x02000001 ; syscall for exit
             xor     rdi, rdi        ; exit code 0
             syscall                 ; invoke operating system to exit
 
